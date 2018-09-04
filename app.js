@@ -29,6 +29,8 @@ const photos = files.filter(file => !file.includes('_tn')).map((file) => {
 app.get('/photos', (req, res) => res.render('photos', {photos}))
 
 app.use(express.static('public'))
+app.use('/images', express.static('images'))
+
 /*
 const directoryPath = path.join(__dirname, 'views');
 const files = fs.readdirSync(directoryPath);

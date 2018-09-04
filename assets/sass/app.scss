@@ -7,7 +7,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 .container-sm {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -54,4 +54,26 @@ figcaption {
 
 .padded {
     padding: 30px 0;
+}
+
+.content {
+font-size: 19px;
+ blockquote {
+     padding-left: 20px;
+ }
+    .images {
+        @include clearfix();
+        margin: 20px auto;
+    }
+    img {
+        max-width: 400px;
+        max-height: 350px;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 15px;
+
+        @media(max-width: 900px) {
+            max-width: 200px;
+        }
+    }
 }
