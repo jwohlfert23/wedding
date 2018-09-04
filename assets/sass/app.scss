@@ -1,0 +1,57 @@
+// Variables
+@import 'variables';
+@import '~photoswipe/dist/photoswipe.css';
+@import '~photoswipe/dist/default-skin/default-skin.css';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.container-sm {
+    max-width: 800px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    background: $blue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    h1 {
+        color:white;
+        margin-bottom: 20px;
+    }
+}
+
+.main-nav {
+    display: inline-block;
+    a {
+        color: white;
+    }
+}
+
+.main-image {
+    width: 100%;
+}
+
+.photo {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 265px;
+text-align: center;
+figcaption {
+    color: $grey;
+    font-size: 90%;
+}
+    img {
+        width: 100%;
+    }
+}
+
+.padded {
+    padding: 30px 0;
+}
