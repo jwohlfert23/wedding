@@ -41,14 +41,19 @@
     display: inline-block;
     margin-right: 15px;
     vertical-align: middle;
-    width: 265px;
-text-align: center;
-figcaption {
-    color: $grey;
-    font-size: 90%;
-}
+    text-align: center;
+   width: 265px;
+
+    figcaption {
+        color: $grey;
+        font-size: 90%;
+        padding: 8px 0;
+        line-height: 1.2;
+    }
     img {
-        width: 100%;
+        object-fit: cover;
+        width:265px;
+        height:260px;
     }
 }
 

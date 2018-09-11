@@ -22,7 +22,7 @@ const photos = files.filter(file => !file.includes('_tn')).map((file) => {
         height: dim.height,
         image: `/img/gallery/${file}`,
         thumbnail: `/img/gallery/${basename}_tn.jpg`,
-        caption: inflection.humanize(basename)
+        caption: inflection.titleize(basename)
     }
 });
 

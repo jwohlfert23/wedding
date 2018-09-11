@@ -11170,17 +11170,22 @@ a.text-dark:focus {
   display: inline-block;
   margin-right: 15px;
   vertical-align: middle;
-  width: 265px;
   text-align: center;
+  width: 265px;
 }
 
 .photo figcaption {
   color: #656565;
   font-size: 90%;
+  padding: 8px 0;
+  line-height: 1.2;
 }
 
 .photo img {
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 265px;
+  height: 260px;
 }
 
 .padded {
