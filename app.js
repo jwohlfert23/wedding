@@ -27,6 +27,7 @@ const photos = files.filter(file => !file.includes('_tn')).map((file) => {
 });
 
 app.get('/photos', (req, res) => res.render('photos', {photos}))
+app.get('/accomodations', (req, res) => res.render('accomodations'))
 
 app.use(express.static('public'))
 app.use('/images', express.static('images'))
